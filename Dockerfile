@@ -10,4 +10,4 @@ FROM alpine:3.10.2
 
 WORKDIR /app
 COPY --from=builder /go/bin/go-shadowsocks2 /app/
-CMD ["./go-shadowsocks2"]
+ENTRYPOINT ["./go-shadowsocks2"]
